@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+      <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>The Experience Meter — Result</title>
+    <link rel="shortcut icon" type="image/png" href="assets/images/favicon.ico">
+    <link rel="stylesheet" href="assets/Styles.css" />
+    <style>
+      body { font-family: system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial; }
+      .wrap { max-width:720px; margin:36px auto; padding:18px; }
+      .card { text-align:center; }
+      .percent { font-size:3.25rem; font-weight:700; margin:8px 0; color:#555; }
+      .age-comparison { font-size:1.25rem; color:#666; margin:12px 0 24px 0; font-style:italic; }
+      .meta { color:#777; margin-bottom:16px }
+      .btn-row { display:flex; flex-wrap:wrap; gap:10px; justify-content:center }
+      .note { color:#ccc; margin-top:12px }
+      a.linkish { color:inherit; text-decoration:underline }
+      .result-header { text-align:center; margin-bottom:14px; }
+    </style>
+  </head>
+  <body>
+    <div class="wrap">
+      <header class="result-header">
+        <h1>The Grim's Adulting Meter</h1>
+        <div style="color:#ff6b6b">Result</div>
+      </header>
+
+      <div class="card" id="card">
+        <div id="no-data" style="display:none">
+          <p>No score found in this session.</p>
+          <p><a class="linkish" href="index.html">Take the test now</a></p>
+        </div>
+
+        <div id="score-area" style="display:none">
+          <div class="percent" id="percent">0%</div>
+          <div class="age-comparison" id="ageComparison"></div>
+
+          <div class="btn-row">
+            <button id="webShare" class="share-btn">Share</button>
+            <button id="whatsapp" class="share-btn wa">WhatsApp</button>
+            <button id="twitter" class="share-btn tw">Twitter</button>
+            <button id="facebook" class="share-btn fb">Facebook</button>
+            <button id="telegram" class="share-btn tg">Telegram</button>
+            <button id="copy" class="share-btn secondary">Copy Text</button>
+            <button id="retake" class="share-btn secondary">Retake Test</button>
+          </div>
+
+          <div class="note">Share your result with friends.</div>
+        </div>
+      </div>
+    </div>
+
+    <script src="assets/Main.js" defer></script>
+  </body>
+</html>
